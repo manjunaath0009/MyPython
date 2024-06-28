@@ -1,0 +1,64 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+c=float((22//3)+3/3) #8.0
+print(c)
+d=(3^4) #7
+print(d)
+a='"Once", she said'
+b="He said, 'yes'"
+c='3'#'3\' 
+d="'tat's'"
+print(a)
+print(b)
+print(c)
+print(d)
+a=round(1234.1234) #true
+b='wwrong'#round(413.123.2)
+c=round(222.123,2) # true
+d='wrong'#round()
+print(a)
+print(b)
+print(c)
+print(d)
+e=4+3%5  #7
+print(e)
+a='Set: mutable, unordered'
+print(a)
+b='Return type of function id is int'
+#a=foo[-len(foo)]#wrong
+#b=foo[-1]
+#c=foo[0]
+#d=foo[len(foo)]
+a=list("hello")
+print(a)
+num1 = 100
+num2 = 90
+average = (num1 + num2) / 2.0 #95.0
+print(average)
+word="positive"
+print(word[:2]) #po
+#a=int(1111,10)
+b=int('1111',10)
+#c=int(1111,2)
+d=int('1111',2) #15
+print(b)
+print(c)
+print(d)
+print(type(3/4)) #float
+
+def foo(value):
+    while True:
+        value = (yield value)
+bar=foo(1)
+print(next(bar))    #1
+print(next(bar))    #None
+print(bar.send(2))  #2
+print(-4//1.5) #-3.0
+
+from functools import reduce
+import operator
+
+my_list = [1, 2, 3, 4, 5]
+int_result = reduce(operator.concat, map(str, my_list))
+print("Result:", int(int_result))
